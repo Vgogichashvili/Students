@@ -1,5 +1,12 @@
 const mongoose = require('mongoose');
 
+var Category = mongoose.model('Category', {
+    id: { type: Number },
+    categoryName: {type:String}
+    
+});
+
+
 
 var Student = mongoose.model('Student', {
     id: {type:Number},
@@ -12,11 +19,5 @@ var Student = mongoose.model('Student', {
     isactive: { type: Boolean },
 });
 
-var Category = mongoose.model('Category', {
-    id: { type: Number },
-    categoryName: {type:String},
-});
-
-
-module.exports = { Student };
 module.exports = { Category };
+module.exports = { Student };

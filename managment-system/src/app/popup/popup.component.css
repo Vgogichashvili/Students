@@ -1,0 +1,74 @@
+.mat-form-field{
+    width: 100%;
+}
+
+.btn {
+    border: 1px solid #0f03ad;
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "montserrat";
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.btn2 {
+    border: 1px solid #e41212;
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "montserrat";
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.btn1,
+.btn2 {
+    color: #fff;
+}
+
+.btn2 {
+    color: #fff;
+}
+
+.btn1:hover {
+    color: #1100ff;
+}
+
+.btn2:hover {
+    color: #e61212;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #2113e4;
+    z-index: -1;
+    transition: 0.8s;
+}
+
+.btn1::before {
+    top: 0;
+    border-radius: 0 0 50% 50%;
+}
+
+.btn2::before {
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+}
+
+.btn1:hover::before,
+.btn2:hover::before {
+    height: 180%;
+}

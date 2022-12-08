@@ -1,0 +1,137 @@
+form{
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-weight: 900;
+    text-align: center;
+}
+
+.example-additional-selection {
+    opacity: 0.75;
+    font-size: 0.75em;
+}
+
+.form-group{
+    width: 750px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.form-group mat-form-field{
+    width:100%;
+    margin: 0px 10px!important;
+}
+
+
+.example-button-row{
+    margin: 1% 2%;
+}
+
+.example-button-row button,a{
+    width: 15%;
+    margin: 0px 1%;
+}
+.btn {
+    border: 1px solid #0f03ad;
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "montserrat";
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.btn2 {
+    border: 1px solid #e41212;
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "montserrat";
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.btn1,
+.btn2 {
+    color: #fff;
+}
+
+.btn2 {
+    color: #fff;
+}
+
+.btn1:hover {
+    color: #1100ff;
+}
+
+.btn2:hover {
+    color: #e61212;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #2113e4;
+    z-index: -1;
+    transition: 0.8s;
+}
+
+.btn1::before {
+    top: 0;
+    border-radius: 0 0 50% 50%;
+}
+
+.btn2::before {
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+}
+
+.btn1:hover::before,
+.btn2:hover::before {
+    height: 180%;
+}
+
+
+@media only screen and (max-width:750px){
+    form{
+        margin-top: 15%;
+    }
+    .form-group{
+        width: 450px;
+    }
+
+    .example-button-row button,a{
+        width: 35%;
+        margin-left: 3.5%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width:550px){
+    .form-group{
+        width: 350px;
+    }
+
+    .example-button-row button,a{
+        width: 35%;
+        margin-left: 4%;
+        
+    }
+}
+
+

@@ -1,0 +1,49 @@
+<form class="example-form" [formGroup]="studentform" (ngSubmit)="Savestudent()">
+    <mat-card>
+    <mat-card-content>
+    
+     
+      <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Gmail</mat-label>
+          <input matInput  formControlName="gmail" >
+        </mat-form-field>
+        <mat-form-field class="example-full-width"  appearance="fill">
+          <mat-label>Personal number</mat-label>
+          <input matInput  formControlName="personalNumber" >
+        </mat-form-field>
+  
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Name</mat-label>
+          <input matInput  formControlName="name" >
+        </mat-form-field>
+  
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Last name</mat-label>
+          <input matInput  formControlName="lastName" >
+        </mat-form-field>
+  
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Date of Birth</mat-label>
+          <input matInput  formControlName="dateOfBirth" >
+        </mat-form-field>
+  
+    
+        <mat-form-field>
+          <mat-label>Faculty</mat-label>
+          <mat-select formControlName="category">
+            <mat-option   *ngFor="let item of categories" [value]="item.categoryName">{{item.categoryName}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+    
+    <section class="example-section">
+        <mat-checkbox class="example-margin" formControlName="isactive">Is Active</mat-checkbox>
+    </section>
+</mat-card-content>
+    <mat-card-footer>
+    <div class="example-button-row" style="margin: 2px">
+        <button type="submit" class="btn btn1">Save</button> 
+        <a (click)="closepopup()" class="btn btn2">Close</a>
+    </div>
+</mat-card-footer>
+</mat-card>
+  </form>

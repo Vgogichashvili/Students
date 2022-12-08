@@ -1,0 +1,20 @@
+{
+  "student": [
+    {
+      "gmail": "Nikushakhiz@gmail.com",
+      "personalNumber": "590012312",
+      "name": "Nikusha",
+      "lastName": "Khizanishvili",
+      "dateOfBirth": "11.12.2000",
+      "category": "Medicine",
+      "isactive": true,
+      "id": 8
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "categoryName": "Medicine"
+    }
+  ]
+}
