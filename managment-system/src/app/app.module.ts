@@ -36,6 +36,7 @@ import { HttpClientModule } from '@angular/common/http';
     ReactiveFormsModule,
     HttpClientModule,
     ToastrModule.forRoot({ positionClass: 'toast-bottom-right',timeOut:2000 }),
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

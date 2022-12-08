@@ -9,7 +9,6 @@ import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { FormBuilder, Validators } from '@angular/forms';
 import { HttpService } from 'src/app/services/http.service';
-
 import { CategoryPopupComponent } from '../category-popup/category-popup.component';
 import { categoryModel } from 'src/app/models/category.model';
 
